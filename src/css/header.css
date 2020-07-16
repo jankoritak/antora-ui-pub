@@ -16,6 +16,7 @@ body {
   width: 100%;
   word-wrap: break-word;
   z-index: var(--z-index-navbar);
+  padding: var(--doc-margin);
 }
 
 .navbar a {
@@ -33,6 +34,10 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .navbar {
+    padding: var(--doc-margin--desktop);
+  }
+
   .navbar-end > .navbar-item,
   .navbar-end .navbar-link {
     color: var(--color-white);
@@ -64,7 +69,7 @@ body {
 
 .navbar-brand .logo {
   height: 32px;
-  padding-left: 2.5rem;
+  padding-left: 0.5rem;
 }
 
 .navbar-burger {

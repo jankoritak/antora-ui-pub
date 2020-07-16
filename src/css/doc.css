@@ -42,13 +42,6 @@
   margin: 2rem 0 0 0;
 }
 
-/*
-.doc h1.page,
-.doc h2.page {
-  text-align: center;
-}
-*/
-
 #preamble + .sect1,
 .doc .sect1 + .sect1 {
   margin: 2rem 0 0 0;
@@ -56,12 +49,12 @@
 
 @media screen and (min-width: 769px) {
   .doc > h1.page:first-child {
-    margin: 4rem 0 0 0;
+    margin: 4.5rem 0 0 0 !important;
   }
 
   #preamble + .sect1,
   .doc .sect1 + .sect1 {
-    margin: 4rem 0 0 0;
+    margin: 4.5rem 0 0 0 !important;
   }
 }
 

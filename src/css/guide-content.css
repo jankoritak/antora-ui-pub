@@ -44,11 +44,6 @@
   }
 }
 
-#preamble + .sect1,
-.guide-content .sect1 + .sect1 {
-  margin-top: 2rem;
-}
-
 .guide-content h1.sect0 {
   background: var(--abstract-background);
   font-size: 1.8em;

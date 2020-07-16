@@ -1,5 +1,5 @@
 .doc {
-  color: var(--doc-font-color);
+  color: var(--color-guide-subtitle);
   font-size: var(--doc-font-size);
   hyphens: auto;
   line-height: var(--doc-line-height);
@@ -51,7 +51,7 @@
 
 @media screen and (min-width: 769px) {
   .doc > h1.page:first-child {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
   }
 }
 
@@ -438,19 +438,26 @@
 }
 
 .doc .guide {
-  color: #fff;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 4px 0 rgba(53, 61, 73, 0.2);
+  color: var(--color-white);
   display: flex;
   flex: 1 0 auto;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   min-width: 35%;
   padding: 0.5rem 1rem 1.25rem;
-  background-color: red;
   break-inside: avoid-column;
+  border-radius: 5px;
+}
+
+.doc .guide:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 10px 0 rgba(53, 61, 73, 0.2);
 }
 
 .doc .guide h3 {
-  color: var(--hazelcast-dark-blue);
+  color: var(--color-guide-title);
   font-size: 1.25rem;
   line-height: 0;
   padding: 0 0 0.5rem;
@@ -459,8 +466,9 @@
 }
 
 .doc .guide .paragraph {
-  font-weight: var(--monospace-font-weight-bold);
-  margin-top: 1rem;
+  color: var(--color-guide-subtitle);
+  font-size: 1rem;
+  margin-top: 0.5rem;
   flex: 1 0 auto;
 }
 

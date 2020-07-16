@@ -7,9 +7,9 @@ body {
 }
 
 .navbar {
-  background: var(--hazelcast-dark-blue);
-  color: var(--navbar-font-color);
-  font-size: calc(16 / var(--rem-base) * 1rem);
+  background: var(--hazelcast-light-blue);
+  color: var(--color-whiter);
+  font-size: 1rem;
   height: var(--navbar-height);
   position: fixed;
   top: 0;
@@ -25,7 +25,7 @@ body {
 .navbar-brand .navbar-item:first-child,
 .navbar-brand .navbar-item:first-child a {
   color: var(--navbar-font-color);
-  font-size: calc(22 / var(--rem-base) * 1rem);
+  font-size: 1.25rem;
 }
 
 .navbar-brand .separator {
@@ -35,34 +35,40 @@ body {
 @media screen and (min-width: 1024px) {
   .navbar-end > .navbar-item,
   .navbar-end .navbar-link {
-    color: var(--navbar-font-color);
+    color: var(--color-white);
   }
 
   .navbar-end > a.navbar-item:hover,
   .navbar-end .navbar-link:hover {
-    background: var(--navbar_hover-background);
-    color: var(--navbar-font-color);
+    background: var(--hazelcast-dark-blue);
+    color: var(--color-white);
   }
 
   .navbar-end .navbar-link::after {
-    border-color: var(--navbar-font-color);
+    border-color: var(--color-white);
   }
 
   .navbar-item.has-dropdown:hover .navbar-link {
-    background: var(--navbar_hover-background);
-    color: var(--navbar-font-color);
+    background: var(--hazelcast-dark-blue);
+    color: var(--color-white);
   }
 }
 
 .navbar-brand {
-  align-items: stretch;
   display: flex;
-  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   height: var(--navbar-height);
 }
 
+.navbar-brand .logo {
+  height: 32px;
+  padding-left: 2.5rem;
+}
+
 .navbar-burger {
-  color: var(--navbar-font-color);
+  color: var(--color-white);
   background: none;
   border: none;
   outline: none;
@@ -76,7 +82,7 @@ body {
 }
 
 .navbar-burger span {
-  background: var(--navbar-font-color);
+  background: var(--color-white);
   display: block;
   height: 1px;
   left: 50%;
@@ -120,7 +126,7 @@ body {
 
 .navbar-item,
 .navbar-link {
-  color: var(--navbar-menu-font-color);
+  color: var(--color-white);
   display: block;
   line-height: var(--doc-line-height);
   padding: 0.5rem 1rem;
@@ -143,6 +149,10 @@ body {
 
 .navbar-item {
   flex: none;
+}
+
+.navbar-item .external-link {
+  margin-left: 0.5rem;
 }
 
 .navbar-item.has-dropdown {

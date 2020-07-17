@@ -5,7 +5,6 @@
   line-height: var(--doc-line-height);
   margin: var(--doc-margin);
   max-width: var(--doc-max-width);
-  padding: 0 1rem 4rem;
   text-align: center;
 }
 
@@ -16,7 +15,6 @@
     margin: var(--doc-margin--desktop);
     max-width: 100%;
     min-width: 0;
-    margin-bottom: 5rem;
   }
 }
 
@@ -446,11 +444,17 @@
   display: flex;
   flex: 1 0 auto;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   min-width: 35%;
   padding: 0.5rem 1rem 1.25rem;
   break-inside: avoid-column;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .doc .guide {
+    margin-bottom: 2rem;
+  }
 }
 
 .doc .guide:hover {
@@ -487,7 +491,14 @@
 
 .doc .guides-grid {
   column-count: 2;
-  column-gap: 2rem;
+  column-gap: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .doc .guides-grid {
+    column-count: 2;
+    column-gap: 1rem;
+  }
 }
 
 .doc .guide a::after {

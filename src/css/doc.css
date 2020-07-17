@@ -37,22 +37,22 @@
 
 .doc > h1.page:first-child {
   font-size: calc(36 / var(--rem-base) * 1rem);
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
 }
 
 #preamble + .sect1,
 .doc .sect1 + .sect1 {
-  margin: 2rem 0 0 0;
+  margin: 2rem 0;
 }
 
 @media screen and (min-width: 769px) {
   .doc > h1.page:first-child {
-    margin: 4.5rem 0 !important;
+    margin: 4.5rem 0 0 0 !important;
   }
 
   #preamble + .sect1,
   .doc .sect1 + .sect1 {
-    margin: 4.5rem 0 0 0 !important;
+    margin: 4.5rem 0 !important;
   }
 }
 
